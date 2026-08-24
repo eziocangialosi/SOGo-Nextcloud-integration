@@ -13,7 +13,7 @@ For the first one (`/index.php/login/v2`), add theses lines :
 ```add_header Access-Control-Allow-Origin "https://mail.example.com" always;
 add_header Access-Control-Allow-Credentials "true" always;
 add_header Access-Control-Allow-Methods "GET, POST, OPTIONS" always;
-add_header Access-Control-Allow-Headers "Content-Type, Authorization, X-Requested-With, requesttoken, OC-Chunked" always;
+add_header Access-Control-Allow-Headers "Content-Type, Authorization, X-Requested-With, OC-Chunked" always;
 add_header Vary "Origin" always;
 if ($request_method = OPTIONS) {
     return 204;
