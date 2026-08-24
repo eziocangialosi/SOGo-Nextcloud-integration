@@ -14,7 +14,7 @@ use OCP\IUserSession;
 
 class UploadController extends Controller
 {
-    private const ALLOWED_ORIGIN = 'https://mail.tech-user.fr';
+    private const ALLOWED_ORIGIN = 'https://mail.example.com';
 
     public function __construct(
         string $appName,

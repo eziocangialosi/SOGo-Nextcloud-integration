@@ -290,31 +290,6 @@ class FolderController extends Controller
             return $response;
         }
 
-        $response->addHeader(
-            'Access-Control-Allow-Origin',
-            self::ALLOWED_ORIGIN
-        );
-
-        $response->addHeader(
-            'Access-Control-Allow-Credentials',
-            'true'
-        );
-
-        $response->addHeader(
-            'Access-Control-Allow-Methods',
-            'GET, OPTIONS'
-        );
-
-        $response->addHeader(
-            'Access-Control-Allow-Headers',
-            'Content-Type, Accept, requesttoken, OC-RequestToken'
-        );
-
-        $response->addHeader(
-            'Vary',
-            'Origin'
-        );
-
         return $response;
     }
 }
